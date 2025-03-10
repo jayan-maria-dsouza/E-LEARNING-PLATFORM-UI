@@ -34,6 +34,8 @@ The implementation, developed within Visual Studio Code, adheres to standard web
 
 ![Image](https://github.com/user-attachments/assets/f4a30728-3b08-405b-b087-857dadf390d4)
 
+
 ![Image](https://github.com/user-attachments/assets/1bf7c72f-0e2d-4044-874f-d4205255470a)
+
 
 ![Image](https://github.com/user-attachments/assets/4f2e6b3b-8756-4f63-a0ac-60a1ae0e8466)
