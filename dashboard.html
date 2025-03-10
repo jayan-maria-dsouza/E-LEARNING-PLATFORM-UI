@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index4.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <div id="progress-container">
+        <h2>Course Progress</h2>
+        <ul id="progress-items"></ul>
+    </div>
+   
+    
+    <footer class="footer">
+        <p>&copy; 2025 E-Learning Platform. All rights reserved.</p>    
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const progressContainer = document.getElementById("progress-container");
+    
+            // Courses to track
+            const courses = ["Java", "Database Management Systems", "JavaScript", "C#"];
+    
+            courses.forEach(course => {
+                const progress = localStorage.getItem(course) || 0;
+                progressContainer.innerHTML += `
+                    <h3>${course} Progress: ${Math.round(progress)} seconds watched</h3>
+                    <progress value="${progress}" max="3600"></progress> <!-- Assuming 1-hour video -->
+                `;
+            });
+        });
+    </script>
+</body>
+</html>
